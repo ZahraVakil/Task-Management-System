@@ -1,0 +1,19 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-card {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  mat-card-header {
+    color: blue;
+    margin: 5px;
+    font-size: 20px;
+  }
+  

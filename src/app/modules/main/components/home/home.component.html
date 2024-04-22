@@ -1,0 +1,13 @@
+<div class="home-container">
+    <div class="left-section">
+      <h1 class="title mat-display-2">Best Task Management App</h1>
+      <p class="description mat-body-1">Organize your tasks efficiently with our intuitive task management app. Easily create, track, and prioritize your tasks to stay productive and focused. With features like due dates, priorities, and assignees, managing your tasks has never been easier.</p>
+      <button *ngIf="!isLoggedIn" mat-raised-button color="primary" routerLink="auth/login">Get Started</button>
+      <button *ngIf="isLoggedIn" mat-raised-button color="primary" routerLink="task/allTasks">Manage Tasks</button>
+
+    </div>
+    <div class="right-section">
+      <img src="assets/images/display.jpeg" alt="Task Management Image">
+    </div>
+  </div>
+  

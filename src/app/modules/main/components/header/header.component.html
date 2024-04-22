@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+  <div class="container">
+    <span class="app-name">Task Management App</span>
+    <span class="spacer"></span>
+    
+   <div class="navlinks">
+    <button mat-stroked-button *ngIf="userRole === 'admin'"  routerLink="/user/alluser">User Management</button>
+    <button mat-stroked-button *ngIf="userRole === 'admin' || userRole === 'customer'"  routerLink="/task/alltask">Task Management</button>
+
+
+    <button *ngIf="isLoggedIn" mat-stroked-button class="logout" (click)="logout()">Logout</button>
+    
+    <button *ngIf="!isLoggedIn" mat-stroked-button class="login" routerLink="/auth/login">Login</button>
+
+    <button *ngIf="isLoggedIn" mat-icon-button [matMenuTriggerFor]="menu" class="avatar-button">
+      <img src="{{ loggedInUser.avatar }}" alt="Avatar">
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>My Tasks</button>
+      <button mat-menu-item >Pending Tasks</button>
+      <button mat-menu-item >Completed Tasks</button>
+    </mat-menu>
+  </div>
+</div>
+</mat-toolbar>
+<!-- routerLink="/my-tasks" -->

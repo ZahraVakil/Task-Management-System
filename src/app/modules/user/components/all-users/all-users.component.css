@@ -1,0 +1,42 @@
+.container {
+    padding: 20px;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+  }
+  
+  .add-button {
+    margin-bottom: 20px;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .mat-table {
+    width: 100%;
+  }
+  
+  .mat-row:hover {
+    background-color: #f5f5f5;
+  }
+ 
+/* Adjust the width of the input fields for Name and Password */
+.mat-column-name mat-form-field,
+.mat-column-password mat-form-field {
+  width: 100px; /* You can adjust the width value as needed */
+}
+
+  .action-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+  }
+  
+  .done-button {
+    color: green; 
+  }
+  
+  
+  

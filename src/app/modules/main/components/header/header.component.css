@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .app-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .spacer {
+    flex: 1;
+  }
+
+  ::ng-deep .mat-toolbar .login {
+    border-color: white;
+  }
+  
+  .navlinks button {
+    margin-right: 8px; 
+  }
+
+  .avatar-button {
+    border: 2px solid #ffffff; 
+    border-radius: 50%; 
+    padding: 8px; 
+    margin-right: 8px; 
+
+  }
+  
+  .avatar-button mat-icon {
+    font-size: 24px; 
+  }
